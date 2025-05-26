@@ -6,3 +6,4 @@ email-validator
 WTForms
 gunicorn
 email-validator
+Flask-Migrate
