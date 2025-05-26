@@ -9,3 +9,8 @@
   <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">← Back to Home</a>
 </article>
 {% endblock %}
+{% if post.image %}
+    <img src="{{ url_for('static', filename='uploads/' + post.image) }}" alt="Post image" width="100%">
+{% endif %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>

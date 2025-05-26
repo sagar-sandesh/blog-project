@@ -2,20 +2,37 @@
 {% block title %}{{ legend }}{% endblock %}
 {% block content %}
 <h1>{{ legend }}</h1>
-<form method="POST">
-  {{ form.hidden_tag() }}
-  <div class="mb-3">
-    {{ form.title.label(class="form-label") }}
-    {{ form.title(class="form-control") }}
-  </div>
-  <div class="mb-3">
-    {{ form.category.label(class="form-label") }}
-    {{ form.category(class="form-select") }}
-  </div>
-  <div class="mb-3">
-    {{ form.content.label(class="form-label") }}
-    {{ form.content(class="form-control", rows=8) }}
-  </div>
-  {{ form.submit(class="btn btn-primary") }}
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.title.label }}<br>
+    {{ form.title(size=40) }}<br><br>
+
+    {{ form.content.label }}<br>
+    {{ form.content(rows=10, cols=50) }}<br><br>
+
+    {{ form.category.label }}<br>
+    {{ form.category() }}<br><br>
+
+    {{ form.image.label }}<br>
+    {{ form.image() }}<br><br>
+
+    <input type="submit" value="Save">
 </form>
+
+<!--<form method="POST">-->
+<!--  {{ form.hidden_tag() }}-->
+<!--  <div class="mb-3">-->
+<!--    {{ form.title.label(class="form-label") }}-->
+<!--    {{ form.title(class="form-control") }}-->
+<!--  </div>-->
+<!--  <div class="mb-3">-->
+<!--    {{ form.category.label(class="form-label") }}-->
+<!--    {{ form.category(class="form-select") }}-->
+<!--  </div>-->
+<!--  <div class="mb-3">-->
+<!--    {{ form.content.label(class="form-label") }}-->
+<!--    {{ form.content(class="form-control", rows=8) }}-->
+<!--  </div>-->
+<!--  {{ form.submit(class="btn btn-primary") }}-->
+<!--</form>-->
 {% endblock %}

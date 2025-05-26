@@ -27,6 +27,7 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(250), nullable=False)
     content = db.Column(db.Text, nullable=False)
+    image = db.Column(db.String(120))  # Make sure this column is included
     date_posted = db.Column(db.DateTime, default=datetime.utcnow)
     excerpt = db.Column(db.String(300))
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'), nullable=False)
