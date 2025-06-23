@@ -3,6 +3,7 @@ from wtforms import StringField, PasswordField, TextAreaField, SubmitField, Sele
 from wtforms.validators import DataRequired, Length
 from flask_wtf.file import FileField, FileAllowed
 class LoginForm(FlaskForm):
+    email_validator = StringField('email',validators=[DataRequired()])
     username = StringField('Username', validators=[DataRequired(), Length(min=4, max=150)])
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Login')
