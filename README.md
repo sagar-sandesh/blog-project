@@ -34,31 +34,31 @@ Welcome to **My Blog**, a fully functional blog platform built with **Flask**, *
 
 myblog/
 -│
--├── app.py
--├── config.py
--├── models.py
--├── forms.py
--├── static/
--│ ├── css/
--│ │ └── style.css
--│ └── images/
--│ └── uploaded blog images
--├── templates/
--│ ├── base.html
--│ ├── index.html
--│ ├── post_details.html
--│ ├── login.html
--│ ├── dashboard.html
--│ ├── post_form.html
--│ ├── contact.html
--│ └── about.html
--├── requirements.txt
--└── README.md
+- ├── app.py
+- ├── config.py
+- ├── models.py
+- ├── forms.py
+- ├── static/
+- │ ├── css/
+- │ │ └── style.css
+- │ └── images/
+- │ └── uploaded blog images
+- ├── templates/
+- │ ├── base.html
+- │ ├── index.html
+- │ ├── post_details.html
+- │ ├── login.html
+- │ ├── dashboard.html
+- │ ├── post_form.html
+- │ ├── contact.html
+- │ └── about.html
+- ├── requirements.txt
+- └── README.md
 
 ---
 
 ## ⚙️ Installation
-
+---
 ## 📌 Prerequisites
 
 - Python 3.8+
@@ -67,7 +67,7 @@ myblog/
 ---
 ## 🧩 Steps
 
-
+---
 #### Clone the repository
 ```bash
 git clone https://github.com/yourusername/myblog.git
@@ -84,6 +84,7 @@ source venv/bin/activate     # On Windows use: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+---
 #### Run the app
 ```bash
 python app.py
@@ -91,23 +92,26 @@ python app.py
 ---
 ---
 
-##🔐 Admin Login Credentials
+## 🔐  Admin Login Credentials
+
 Username: admin
+
 Password: adminpass
 
-###✏️ Usage
+## ✏️ Usage
 Visit the homepage to see latest blog posts.
+
 Admins can:
 
-Login via /admin/login
+- Login via /admin/login
 
-Create/edit/delete posts via the dashboard.
+- Create/edit/delete posts via the dashboard.
 
-View individual post details by clicking "Read More".
+- View individual post details by clicking "Read More".
 
-Static pages like /about and /contact are always accessible.
----
-###🧪 Future Improvements
+-Static pages like /about and /contact are always accessible.
+
+### 🧪 Future Improvements
 ✅ Pagination on homepage
 
 🔍 Search functionality
@@ -119,17 +123,17 @@ Static pages like /about and /contact are always accessible.
 📬 Contact form with Flask-Mail
 
 🧼 XSS protection & content sanitization
----
-🙋 Contributing
-Contributions are welcome!
 
-Fork the repository
+## 🙋 Contributing
+- Contributions are welcome!
 
-Create a new branch (feature/new-feature)
+- Fork the repository
 
-Commit your changes
+- Create a new branch (feature/new-feature)
 
-Open a Pull Request
+- Commit your changes
 
-📝 License
+- Open a Pull Request
+
+## 📝 License
 This project is licensed under the MIT License.
