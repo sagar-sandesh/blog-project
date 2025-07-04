@@ -137,3 +137,7 @@ Admins can:
 
 ## 📝 License
 This project is licensed under the MIT License.
+## 👤 Author
+Mr. Sagar Sandesh Oli
+📧 olisagarsandesh@gmail.com
+📍 Based in Finland 🇫🇮 | Originally from Nepal 🇳🇵
