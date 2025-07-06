@@ -93,14 +93,14 @@ python app.py
 
 ## 🔐  Admin Login Credentials
 
-Username: admin
+**Username:** admin
 
-Password: adminpass
+**Password:** adminpass
 
 ## ✏️ Usage
 Visit the homepage to see latest blog posts.
 
-Admins can:
+**Admins can:**
 
 - Login via /admin/login
 
