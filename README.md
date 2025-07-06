@@ -33,7 +33,6 @@ Welcome to **My Blog**, a fully functional blog platform built with **Flask**, *
 ## 📁 Project Structure
 
 myblog/
--│
 - ├── app.py
 - ├── config.py
 - ├── models.py
@@ -59,33 +58,33 @@ myblog/
 
 ## ⚙️ Installation
 ---
-## 📌 Prerequisites
+### 📌 Prerequisites
 
 - Python 3.8+
 - pip (Python package manager)
 - Virtual environment (optional but recommended)
 ---
-## 🧩 Steps
+### 🧩 Steps
 
 ---
-#### Clone the repository
+#### 1.Clone the repository
 ```bash
 git clone https://github.com/yourusername/myblog.git
 cd myblog
 ```
 ---
-####  Create a virtual environment
+#### 2. Create a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate     # On Windows use: venv\Scripts\activate
 ```
 ---
-#### Install dependencies
+#### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 ---
-#### Run the app
+#### 4. Run the app
 ```bash
 python app.py
 ```
